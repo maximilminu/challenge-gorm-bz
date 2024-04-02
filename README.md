@@ -1,4 +1,4 @@
-# Balanz - Desafío de Backend en Go
+# Desafío de Backend en Go
 
 ¡Bienvenido al Desafío de Backend en Go! Este desafío está diseñado para evaluar tus habilidades en programación y desarrollo de backend utilizando el lenguaje de programacion Go (Golang).
 En este desafío, se espera que diseñes y desarrolles dos endpoints que interactúen con una base de datos PostgreSQL (o SQLite) y emulen la persistencia de archivos en un servicio S3 de AWS.
