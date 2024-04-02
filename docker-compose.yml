@@ -1,0 +1,17 @@
+version: "3.9"
+services:
+  db:
+    image: postgres:15.4-alpine
+    container_name: balanz_db
+    environment:
+      - POSTGRES_USER=challenge
+      - POSTGRES_PASSWORD=challenge
+      - POSTGRES_DB=challenge
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U challenge -p 5432"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    command: -p 5432
