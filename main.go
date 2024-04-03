@@ -39,6 +39,8 @@ func main() {
 
 	r.POST("/endpoint1", handler.HandleEndpoint1)
 	r.POST("/endpoint2", handler.HandleEndpoint2)
+	r.GET("/by-id/:id", handler.GetByID)
+	r.GET("/by-ticker/:ticker", handler.RawGet)
 
 	port := ":" + goDotEnvVariable("PORT")
 
