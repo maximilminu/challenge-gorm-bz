@@ -30,7 +30,7 @@ func main() {
 
 	fmt.Println("CHALLENGE DB CONNECTED")
 
-	err := database.DB.AutoMigrate(&handler.Endpoint1{})
+	err := database.DB.AutoMigrate(&handler.Endpoint1{}, &handler.File{})
 	if err != nil {
 		panic("failed to migrate database")
 	}
